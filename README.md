@@ -1,4 +1,4 @@
-make-activity
+hw09-patriciata: Homework 9
 =============
 
 Modified from: https://github.com/STAT545-UBC/make-activity
