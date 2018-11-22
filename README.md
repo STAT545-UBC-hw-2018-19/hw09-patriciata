@@ -1,6 +1,9 @@
 make-activity
 =============
 
+Modified from: https://github.com/STAT545-UBC/make-activity
+
+
 The commit history of this repository reflects what a student might do as she works through [this activity](http://stat545-ubc.github.io/automation04_make-activity.html) from [STAT 545](http://stat545-ubc.github.io). This fully developed example shows:
 
   * How to run an R script non-interactively
