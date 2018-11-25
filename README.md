@@ -1,5 +1,5 @@
 # hw09-patriciata: Homework 9
-=============
+=======
 
 This is the repository for STAT547M Homework 9 by Patricia Angkiriwang. Homework prompt can be found [here](http://stat545.com/Classroom/assignments/hw09/hw09.html). This assignment modifies and builds upon a simple automated R workflow, using the intersection of R and `make`. Original code here: https://github.com/STAT545-UBC/make-activity
 
