@@ -1,0 +1,24 @@
+---
+title: "English Word starts"
+author: "Patricia T. Angkiriwang"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    keep_md: yes
+---
+
+The following text is adapted from Jenny Bryan's report on English Word lengths from [this activity](https://github.com/STAT545-UBC/make-activity).
+
+```{r load-hist-dat, include = FALSE}
+hist_dat <- read.delim("starting_letters.tsv")
+```
+
+On most *nix systems, the file `/usr/share/dict/words` contains a bunch of words. On my machine, it contains `r sum(hist_dat$Freq)` words.
+
+I took count of the starting letter of each word, and tabulated how many words started with a, b, c, etc.
+
+The most frequent starting letter is `r with(hist_dat, Starting_letter[which.max(Freq)])`.
+
+Here is a histogram of starting letters.
+
+![*Fig. 1* What letters do these words start with?](startingletter_histogram.png)
