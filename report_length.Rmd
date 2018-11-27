@@ -4,7 +4,8 @@ author: "Jenny Bryan"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document:
-    keep_md: yes
+     theme: readable
+  github_document: default
 ---
 
 ```{r load-hist-dat, include = FALSE}

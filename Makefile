@@ -22,10 +22,10 @@ lengths: report_length.html
 starts: report_start.html
 
 report_length.html: report_length.rmd length_histogram.png
-	Rscript -e 'rmarkdown::render("$<")'
+	Rscript -e 'rmarkdown::render("$<",output_format = "all")'
 
 report_start.html: report_start.rmd startingletter_histogram.png
-	Rscript -e 'rmarkdown::render("$<")'
+	Rscript -e 'rmarkdown::render("$<", output_format = "all")'
 
 length_histogram.png: lengths.tsv
 	Rscript -e 'library(ggplot2); qplot(Length, Freq, data=read.delim("$<")) + theme_minimal(); ggsave("$@")'
