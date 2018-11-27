@@ -11,7 +11,7 @@ Refer to [this activity](http://stat545-ubc.github.io/automation04_make-activity
 |R project file | [make-activity.Rproj](make-activity.Rproj) |
 |Files used for this workflow (to generate reports)| [report_length.md](report_length.md),[length.R](length.R),[report_start.md](report_start.md),[starting_letter.R](starting_letter.R) |
 |Intermediate outputs necessary for output markdown reports | [length_histogram.png](length_histogram.png), [lengths.tsv](lengths.tsv), [startingletter_histogram.png](startingletter_histogram.png), [starting_letters.tsv](starting_letters.tsv)|
-|Files used to generate Makefile diagram | [makefile2dot.py](makefile2dot.py), [Makefile](Makefile) |
+|Files used to generate Makefile [diagram](diagram.png) | [makefile2dot.py](makefile2dot.py), [Makefile](Makefile) |
 |Data copied from /usr/share/dict/words and used for this analysis | [words.txt](words.txt)| 
 
 Elements added/ changed:
@@ -20,3 +20,5 @@ Elements added/ changed:
 - Changed appearance of plots generated in the [Makefile](Makefile).
 - Added more phony targets in the Makefile. Now you can run `make lengths` and `make starts`, referring to the two types of analyses in this workflow, in addition to `make clean` and `make all`.
 - Used code from [https://github.com/vak/makefile2dot](makefile2dot.py), using Python and graphviz, to generate a [graph of the Makefile](diagram.png).
+
+![Makefile diagram](diagram.png)
