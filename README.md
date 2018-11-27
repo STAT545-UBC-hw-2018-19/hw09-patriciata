@@ -9,13 +9,14 @@ Refer to [this activity](http://stat545-ubc.github.io/automation04_make-activity
 |-----------|-------------|
 |The Makefile for this assignment |[Makefile](Makefile)|
 |R project file | [make-activity.Rproj](make-activity.Rproj) |
-|Files used to generate R markdown outputs | [report_start.md](report.md),[length.R](),[report_length.md](),[starting_letter.R]() |
-|Files used to generate Makefile diagram | [makefile2dot.py](), [Makefile]() |
-|Data copied from /usr/share/dict/words and used for this analysis | [words.txt]()| 
+|Files used for this workflow (to generate reports)| [report_length.md](report_length.md),[length.R](length.R),[report_start.md](report_start.md),[starting_letter.R](starting_letter.R) |
+|Intermediate outputs necessary for output markdown reports | [length_histogram.png](length_histogram.png), [lengths.tsv](lengths.tsv), [startingletter_histogram.png](startingletter_histogram.png), [starting_letters.tsv](starting_letters.tsv)|
+|Files used to generate Makefile diagram | [makefile2dot.py](makefile2dot.py), [Makefile](Makefile) |
+|Data copied from /usr/share/dict/words and used for this analysis | [words.txt](words.txt)| 
 
 Elements added/ changed:
-- Renamed length of word "histogram" filenames from the original [repository](https://github.com/STAT545-UBC/make-activity) to reflect content (e.g. to "length_histogram.png", etc.) and changed dependencies and links accordingly in the [Makefile]() and [R markdown]() files.
-- Created R script ([starting_letter.R]()) to make a barplot on starting letters of words, and created separate report using [report_start.md]() and text based on Jenny Bryan's [example](report_length.md).
-- Changed appearance of plots generated in the Makefile.
+- Renamed length of word "histogram" filenames from the original [repository](https://github.com/STAT545-UBC/make-activity) to reflect content (e.g. to "length_histogram.png", etc.) and changed dependencies and links accordingly in the [Makefile](Makefile) and [R markdown](report_length.md) files.
+- Created R script ([starting_letter.R](starting_letter.R)) to make a barplot on starting letters of words, and created separate report using [report_start.md](report_start.md) and text based on Jenny Bryan's [example](report_length.md).
+- Changed appearance of plots generated in the [Makefile](Makefile).
 - Added more phony targets in the Makefile. Now you can run `make lengths` and `make starts`, referring to the two types of analyses in this workflow, in addition to `make clean` and `make all`.
-- Used code from https://github.com/vak/makefile2dot, using Python and graphviz, to generate a [graph of the Makefile]().
+- Used code from [https://github.com/vak/makefile2dot](makefile2dot.py), using Python and graphviz, to generate a [graph of the Makefile](diagram.png).
