@@ -9,8 +9,8 @@ Refer to [this activity](http://stat545-ubc.github.io/automation04_make-activity
 |-----------|-------------|
 |The Makefile for this assignment |[Makefile](Makefile)|
 |R project file | [make-activity.Rproj](make-activity.Rproj) |
-|Files used for this workflow (to generate reports- found [here](report_length.md) and [here](report_start.md))| [report_length.Rmd](report_length.Rmd),[length.R](length.R),[report_start.Rmd](report_start.Rmd),[starting_letter.R](starting_letter.R) |
-|Intermediate outputs necessary for output markdown reports | [length_histogram.png](length_histogram.png), [lengths.tsv](lengths.tsv), [startingletter_histogram.png](startingletter_histogram.png), [starting_letters.tsv](starting_letters.tsv)|
+|Files used for this workflow (to generate reports- found [here](report_length.md) and [here](report_start.md))| [report_length.Rmd](report_length.Rmd),[length.R](length.R),<br> [report_start.Rmd](report_start.Rmd),[starting_letter.R](starting_letter.R) |
+|Intermediate outputs necessary for output markdown reports | [length_histogram.png](length_histogram.png), [lengths.tsv](lengths.tsv), <br> [startingletter_histogram.png](startingletter_histogram.png), [starting_letters.tsv](starting_letters.tsv)|
 |Files used to generate Makefile [diagram](diagram.png) | [makefile2dot.py](makefile2dot.py), [Makefile](Makefile) |
 |Data copied from /usr/share/dict/words and used for this analysis | [words.txt](words.txt)| 
 
